@@ -6,25 +6,13 @@ This Vim plugin contains the `vem-dark` colorscheme, which is an updated
 version of *Wombat* by Lars H. Nielsen
 (https://dengmao.wordpress.com/2007/01/22/vim-color-scheme-wombat/).
 
-![Screenshot](screenshots/vem-dark-gui.png)
-
 `vem-dark` supports both GVim and terminal Vim with 24bit, 256 and 16 colors.
-
-`vem-dark` is used as the default color scheme of a bigger Vim configuration
-setup name Vem -still in the works-. Hence the plugin name. In any case, this
-color scheme can be used totally independently from the Vem project. Other
-components of the project are:
-
-* [Vem Tabline](https://github.com/pacha/vem-tabline): A plugin to show the
-  list of buffers in the tabline.
-
-* [Vem Statusline](https://github.com/pacha/vem-statusline): A light plugin
-  to show some useful information in Vim statusline.
-
 
 ## Configuration
 
 ### Gvim
+
+![Screenshot](screenshots/vem-dark-gui.png)
 
 Once you have installed the plugin, you can activate the new color scheme
 in your `.vimrc` file with:
@@ -94,4 +82,17 @@ colorscheme vem-dark
 Note that in these terminals the chosen color are defined by the
 terminal itself, not by the color scheme. The color palette shown in
 this example is know as 'Tango' and it is available in many terminals.
+
+---
+
+**Note**: `vem-dark` is used as the default color scheme of a bigger Vim
+configuration setup name Vem -still in the works-. Hence the plugin name. In
+any case, this color scheme can be used totally independently from the Vem
+project. Other components of the project are:
+
+* [Vem Tabline](https://github.com/pacha/vem-tabline): A plugin to show the
+  list of buffers in the tabline.
+
+* [Vem Statusline](https://github.com/pacha/vem-statusline): A light plugin
+  to show some useful information in Vim statusline.
 
