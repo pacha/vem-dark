@@ -223,6 +223,7 @@ if exists('g:loaded_vem') && g:loaded_vem == 1
 
     " vem-statusline
     exec "highlight VemStatusLineMode          term=bold cterm=bold ctermfg=". s:yellow ." ctermbg=". s:borders ." guifg=#cae682 guibg=#373737 gui=bold"
+    exec "highlight VemStatusLineModeInsert    term=bold cterm=bold ctermfg=". s:yellow ." ctermbg=". s:borders ." guifg=#cae682 guibg=#373737 gui=bold"
     exec "highlight VemStatusLineBranch        term=none cterm=none ctermfg=". s:grey   ." ctermbg=". s:borders ." guifg=#999999 guibg=#373737 gui=none"
     exec "highlight VemStatusLineFileModified  term=bold cterm=bold ctermfg=". s:yellow ." ctermbg=". s:borders ." guifg=#cae682 guibg=#373737 gui=bold"
     exec "highlight VemStatusLineFileRO        term=bold cterm=bold ctermfg=". s:red    ." ctermbg=". s:borders ." guifg=#e5786d guibg=#373737 gui=bold"
