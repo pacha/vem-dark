@@ -2,8 +2,11 @@
 Vem Dark
 ========
 
-This Vim plugin contains the `vem-dark` colorscheme, which is an updated
-version of *Wombat* by Lars H. Nielsen
+Dark color scheme for Vim.
+
+![Vem Dark](screenshots/vem-dark-example.png)
+
+`vem-dark` is an updated version of *Wombat* by Lars H. Nielsen
 (https://dengmao.wordpress.com/2007/01/22/vim-color-scheme-wombat/).
 
 `vem-dark` supports both GVim and terminal Vim with 24bit, 256 and 16 colors.
@@ -12,7 +15,7 @@ version of *Wombat* by Lars H. Nielsen
 
 ### Gvim
 
-![Screenshot](screenshots/vem-dark-gui.png)
+![Vem Dark GUI](screenshots/vem-dark-gui.png)
 
 Once you have installed the plugin, you can activate the new color scheme
 in your `.vimrc` file with:
@@ -28,7 +31,7 @@ colorscheme vem-dark
 
 ### 24bit True Color Terminals
 
-![Screenshot](screenshots/vem-dark-24bit.png)
+![Vem Dark - Teminal 24bit](screenshots/vem-dark-24bit.png)
 
 With 24bit color support you can display Vim color schemes in the terminal
 as they do in graphical Vim.
@@ -51,7 +54,7 @@ colorscheme vem-dark
 
 ### 256 Color Terminals
 
-![Screenshot](screenshots/vem-dark-256.png)
+![Vem Dark - Terminal 256 Colors](screenshots/vem-dark-256.png)
 
 You can configure your 256 color terminal to use the color scheme with:
 ```
@@ -66,7 +69,7 @@ colorscheme vem-dark
 ```
 ### 16 Color Terminals
 
-![Screenshot](screenshots/vem-dark-16.png)
+![Vem Dark - Terminal 16 Colors](screenshots/vem-dark-16.png)
 
 You can configure your 16 color terminal to use the color scheme with:
 ```
@@ -92,7 +95,6 @@ project. Other components of the project are:
 
 * [Vem Tabline](https://github.com/pacha/vem-tabline): A plugin to show the
   list of buffers in the tabline.
-
 * [Vem Statusline](https://github.com/pacha/vem-statusline): A light plugin
   to show some useful information in Vim statusline.
 
