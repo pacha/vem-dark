@@ -143,9 +143,9 @@ exec "highlight Conceal        guifg=#a0a8b0 guibg=#384048 gui=none"
 exec "highlight SignColumn     term=none cterm=none ctermfg=". s:grey ." ctermbg=". s:linenr_bg ." guifg=#8ac6f2 guibg=#111111 gui=none"
 
 " Diffs
-exec "highlight DiffAdd        term=bold cterm=none ctermfg=". s:hi_fg ." ctermbg=". s:hi_green ." guifg=#f6f3e8 guibg=#1f7356 gui=none"
+exec "highlight DiffAdd        term=bold cterm=none ctermfg=". s:hi_fg ." ctermbg=". s:hi_green ." guifg=#f6f3e8 guibg=#0f6346 gui=none"
 exec "highlight DiffChange     term=bold cterm=none ctermfg=". s:hi_fg ." ctermbg=". s:hi_blue ." guifg=#f6f3e8 guibg=#2f628e gui=none"
-exec "highlight DiffText       term=reverse cterm=none ctermfg=". s:black ." ctermbg=". s:hi_yellow ." guifg=#f6f3e8 guibg=#5f92be gui=none"
+exec "highlight DiffText       term=reverse cterm=none ctermfg=". s:black ." ctermbg=". s:hi_yellow ." guifg=#ffffff guibg=#5f92be gui=bold"
 exec "highlight DiffDelete     term=bold cterm=none ctermfg=". s:diffdelete_fg ." ctermbg=". s:diffdelete_bg ." guifg=#404040 guibg=#303030 gui=none"
 
 " Spelling
