@@ -232,10 +232,12 @@ if exists('g:loaded_vem') && g:loaded_vem == 1
 
     " vem-tabline
     exec "highlight VemTablineNormal           term=reverse cterm=none ctermfg=". s:white ." ctermbg=". s:tabline_bg ." guifg=#242424 guibg=#cdcdcd gui=none"
-    exec "highlight VemTablineSelected         term=underline cterm=bold ctermfg=". s:tabline_fg ." ctermbg=". s:white ." guifg=#242424 guibg=#ffffff gui=bold"
-    exec "highlight VemTablineSeparator        term=reverse cterm=none ctermfg=". s:grey ." ctermbg=". s:tabline_bg ." guifg=#e6e3d8 guibg=#404040 gui=" . s:italic
     exec "highlight VemTablineLocation         term=reverse cterm=none ctermfg=". s:white ." ctermbg=". s:tabline_bg ." guifg=#666666 guibg=#cdcdcd gui=none"
-    exec "highlight VemTablineLocationSelected term=underline cterm=bold ctermfg=". s:tabline_fg ." ctermbg=". s:white ." guifg=#242424 guibg=#ffffff gui=bold"
+    exec "highlight VemTablineSelected         term=underline cterm=bold ctermfg=". s:tabline_fg ." ctermbg=". s:white ." guifg=#242424 guibg=#ffffff gui=bold"
+    exec "highlight VemTablineLocationSelected term=underline cterm=bold ctermfg=". s:tabline_fg ." ctermbg=". s:white ." guifg=#666666 guibg=#ffffff gui=bold"
+    exec "highlight VemTablineShown            term=reverse cterm=none ctermfg=". s:white ." ctermbg=". s:tabline_bg ." guifg=#242424 guibg=#cdcdcd gui=none"
+    exec "highlight VemTablineLocationShown    term=reverse cterm=none ctermfg=". s:white ." ctermbg=". s:tabline_bg ." guifg=#666666 guibg=#cdcdcd gui=none"
+    exec "highlight VemTablineSeparator        term=reverse cterm=none ctermfg=". s:grey ." ctermbg=". s:tabline_bg ." guifg=#e6e3d8 guibg=#404040 gui=" . s:italic
     exec "highlight VemTablineTabNormal        term=reverse cterm=none ctermfg=". s:white ." ctermbg=". s:tabline_bg ." guifg=#242424 guibg=#cdcdcd gui=none"
     exec "highlight VemTablineTabSelected      term=underline cterm=bold ctermfg=". s:tabline_fg ." ctermbg=". s:white ." guifg=#242424 guibg=#ffffff gui=bold"
 
