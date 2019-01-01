@@ -30,8 +30,9 @@ if &t_Co == 256
     let s:borders = '237'
     let s:statusline_nc_fg = '243'
     let s:statusline_nc_bg = '238'
-    let s:tabline_fg = '235'
-    let s:tabline_bg = '240'
+    let s:tabline_fg = '0'
+    let s:tabline_bg = '251'
+    let s:tabline_location = '239'
     let s:terminal_bg = '236'
     let s:special = '252'
     let s:non_text_fg = '244'
@@ -63,8 +64,9 @@ else
     let s:borders = '8'
     let s:statusline_nc_fg = '8'
     let s:statusline_nc_bg = '0'
-    let s:tabline_fg = '0'
+    let s:tabline_fg = '15'
     let s:tabline_bg = '8'
+    let s:tabline_location = '0'
     let s:terminal_bg = '0'
     let s:special = '7'
     let s:non_text_fg = '8'
@@ -119,7 +121,7 @@ exec "highlight QuickFixLine   term=underline cterm=none ctermfg=". s:white ." c
 exec "highlight VertSplit      term=none cterm=none ctermfg=". s:borders ." ctermbg=". s:borders ." guifg=#373737 guibg=#373737 gui=none"
 exec "highlight StatusLine     term=none cterm=none ctermfg=". s:white ." ctermbg=". s:borders ." guifg=#e6e3d8 guibg=#373737 gui=none"
 exec "highlight StatusLineNC   term=none cterm=". s:italic ." ctermfg=". s:statusline_nc_fg ." ctermbg=". s:statusline_nc_bg ." guifg=#857b6f guibg=#404040 gui=" . s:italic
-exec "highlight TabLine        term=reverse cterm=none ctermfg=". s:white ." ctermbg=". s:tabline_bg ." guifg=#242424 guibg=#cdcdcd gui=none"
+exec "highlight TabLine        term=reverse cterm=none ctermfg=". s:tabline_fg ." ctermbg=". s:tabline_bg ." guifg=#242424 guibg=#cdcdcd gui=none"
 exec "highlight TabLineSel     term=underline cterm=bold ctermfg=". s:tabline_fg ." ctermbg=". s:white ." guifg=#242424 guibg=#ffffff gui=bold"
 exec "highlight TabLineFill    term=reverse cterm=none ctermfg=". s:white ." ctermbg=". s:tabline_bg ." guifg=#e6e3d8 guibg=#404040 gui=" . s:italic
 
@@ -231,14 +233,14 @@ if exists('g:loaded_vem') && g:loaded_vem == 1
     exec "highlight VemStatusLinePosition      term=bold cterm=bold ctermfg=". s:white  ." ctermbg=". s:borders ." guifg=#f6f3e8 guibg=#373737 gui=bold"
 
     " vem-tabline
-    exec "highlight VemTablineNormal           term=reverse cterm=none ctermfg=". s:white ." ctermbg=". s:tabline_bg ." guifg=#242424 guibg=#cdcdcd gui=none"
-    exec "highlight VemTablineLocation         term=reverse cterm=none ctermfg=". s:white ." ctermbg=". s:tabline_bg ." guifg=#666666 guibg=#cdcdcd gui=none"
-    exec "highlight VemTablineSelected         term=underline cterm=bold ctermfg=". s:tabline_fg ." ctermbg=". s:white ." guifg=#242424 guibg=#ffffff gui=bold"
-    exec "highlight VemTablineLocationSelected term=underline cterm=bold ctermfg=". s:tabline_fg ." ctermbg=". s:white ." guifg=#666666 guibg=#ffffff gui=bold"
-    exec "highlight VemTablineShown            term=reverse cterm=none ctermfg=". s:white ." ctermbg=". s:tabline_bg ." guifg=#242424 guibg=#cdcdcd gui=none"
-    exec "highlight VemTablineLocationShown    term=reverse cterm=none ctermfg=". s:white ." ctermbg=". s:tabline_bg ." guifg=#666666 guibg=#cdcdcd gui=none"
+    exec "highlight VemTablineNormal           term=reverse cterm=none ctermfg=". s:tabline_fg ." ctermbg=". s:tabline_bg ." guifg=#242424 guibg=#cdcdcd gui=none"
+    exec "highlight VemTablineLocation         term=reverse cterm=none ctermfg=". s:tabline_location ." ctermbg=". s:tabline_bg ." guifg=#666666 guibg=#cdcdcd gui=none"
+    exec "highlight VemTablineSelected         term=underline cterm=bold ctermfg=". s:black ." ctermbg=". s:white ." guifg=#242424 guibg=#ffffff gui=bold"
+    exec "highlight VemTablineLocationSelected term=underline cterm=none ctermfg=". s:tabline_location ." ctermbg=". s:white ." guifg=#666666 guibg=#ffffff gui=bold"
+    exec "highlight VemTablineShown            term=reverse cterm=none ctermfg=". s:tabline_fg ." ctermbg=". s:tabline_bg ." guifg=#242424 guibg=#cdcdcd gui=none"
+    exec "highlight VemTablineLocationShown    term=reverse cterm=none ctermfg=". s:tabline_fg ." ctermbg=". s:tabline_bg ." guifg=#666666 guibg=#cdcdcd gui=none"
     exec "highlight VemTablineSeparator        term=reverse cterm=none ctermfg=". s:grey ." ctermbg=". s:tabline_bg ." guifg=#e6e3d8 guibg=#404040 gui=" . s:italic
-    exec "highlight VemTablineTabNormal        term=reverse cterm=none ctermfg=". s:white ." ctermbg=". s:tabline_bg ." guifg=#242424 guibg=#cdcdcd gui=none"
+    exec "highlight VemTablineTabNormal        term=reverse cterm=none ctermfg=". s:tabline_fg ." ctermbg=". s:tabline_bg ." guifg=#242424 guibg=#cdcdcd gui=none"
     exec "highlight VemTablineTabSelected      term=underline cterm=bold ctermfg=". s:tabline_fg ." ctermbg=". s:white ." guifg=#242424 guibg=#ffffff gui=bold"
 
 endif
