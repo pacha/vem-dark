@@ -7,9 +7,9 @@ Dark color scheme for Vim.
 ![Vem Dark](screenshots/vem-dark-example.png)
 
 `vem-dark` is an updated version of *Wombat* by Lars H. Nielsen
-(https://dengmao.wordpress.com/2007/01/22/vim-color-scheme-wombat/).
-
-`vem-dark` supports both GVim and terminal Vim with 24bit, 256 and 16 colors.
+(https://dengmao.wordpress.com/2007/01/22/vim-color-scheme-wombat/) with color
+definitions for newer highlighting groups and support for GVim and terminal Vim
+in 24bit, 256 and 16 colors.
 
 ## Configuration
 
