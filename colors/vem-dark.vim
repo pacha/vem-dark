@@ -106,9 +106,9 @@ exec "highlight Visual         term=reverse cterm=none ctermfg=". s:visual_fg ."
 exec "highlight VisualNOS      term=reverse cterm=none ctermfg=". s:visual_fg ." ctermbg=". s:visual_bg ." guifg=#ffffff guibg=#444444 gui=none"
 
 " Search
-exec "highlight Search         term=bold cterm=none ctermfg=". s:black ." ctermbg=". s:yellow ." guifg=#101010 guibg=#fdea29 gui=none"
-exec "highlight IncSearch      term=bold cterm=none ctermfg=". s:black ." ctermbg=". s:yellow ." guifg=#101010 guibg=#fdea29 gui=none"
-exec "highlight WildMenu       term=bold cterm=none ctermfg=". s:black ." ctermbg=". s:yellow ." guifg=#101010 guibg=#fdea29 gui=bold"
+exec "highlight Search         term=bold cterm=none ctermfg=". s:black ." ctermbg=". s:yellow ." guifg=#101010 guibg=#d7ff87 gui=none"
+exec "highlight IncSearch      term=bold cterm=none ctermfg=". s:black ." ctermbg=". s:yellow ." guifg=#101010 guibg=#d7ff87 gui=none"
+exec "highlight WildMenu       term=bold cterm=none ctermfg=". s:black ." ctermbg=". s:yellow ." guifg=#101010 guibg=#d7ff87 gui=bold"
 exec "highlight MatchParen     term=reverse cterm=bold ctermfg=". s:black ." ctermbg=". s:white ." guifg=#000000 guibg=#999999 gui=none"
 
 " Current line & column
@@ -218,7 +218,7 @@ exec "highlight Ignore         term=none cterm=none ctermfg=NONE ctermbg=NONE gu
 
 exec "highlight Error          term=reverse cterm=none ctermfg=". s:white ." ctermbg=". s:intense_red ." guifg=#FFFFFF guibg=#e91929 gui=none"
 
-exec "highlight TODO           term=bold cterm=none ctermfg=". s:black ." ctermbg=". s:yellow ." guifg=#242424 guibg=#fdea29 gui=bold"
+exec "highlight TODO           term=bold cterm=none ctermfg=". s:black ." ctermbg=". s:yellow ." guifg=#242424 guibg=#d7ff87 gui=bold"
 
 " set vem specific colors
 if exists('g:loaded_vem') && g:loaded_vem == 1
