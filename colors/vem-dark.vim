@@ -109,7 +109,7 @@ exec "highlight VisualNOS      term=reverse cterm=none ctermfg=". s:visual_fg ."
 exec "highlight Search         term=bold cterm=none ctermfg=". s:black ." ctermbg=". s:yellow ." guifg=#101010 guibg=#d7ff87 gui=none"
 exec "highlight IncSearch      term=bold cterm=none ctermfg=". s:black ." ctermbg=". s:yellow ." guifg=#101010 guibg=#d7ff87 gui=none"
 exec "highlight WildMenu       term=bold cterm=none ctermfg=". s:black ." ctermbg=". s:yellow ." guifg=#101010 guibg=#d7ff87 gui=bold"
-exec "highlight MatchParen     term=reverse cterm=bold ctermfg=". s:black ." ctermbg=". s:yellow ." guifg=#101010 guibg=#d7ff87 gui=none"
+exec "highlight MatchParen     term=reverse cterm=bold ctermfg=". s:red ." ctermbg=NONE guifg=#e5786d guibg=NONE gui=bold"
 
 " Current line & column
 exec "highlight CursorLine     term=underline cterm=none ctermfg=NONE ctermbg=". s:visual_bg ." guifg=NONE guibg=#404040 gui=none"
