@@ -11,6 +11,9 @@ Dark color scheme for Vim.
 definitions for newer highlighting groups and support for GVim and terminal Vim
 in 24bit, 256 and 16 colors.
 
+Vem Dark is a component of [Vem](https://www.vem-editor.org), an alternative
+command layout for Vim, but it can be used independently from the Vem project.
+
 ## Configuration
 
 ### Gvim
@@ -34,7 +37,7 @@ colorscheme vem-dark
 ![Vem Dark - Teminal 24bit](screenshots/vem-dark-24bit.png)
 
 With 24bit color support you can display Vim color schemes in the terminal
-as they do in graphical Vim.
+as they would do in graphical Vim.
 
 To use 24bit colors you need a relatively modern terminal and a version of Vim
 later or equal to 7.4.1770. Currently, the lastest versions of gnome-terminal,
@@ -82,19 +85,19 @@ set t_Co=16
 
 colorscheme vem-dark
 ```
-Note that in these terminals the chosen color are defined by the
+Note that in these terminals the chosen colors are defined by the
 terminal itself, not by the color scheme. The color palette shown in
 this example is know as 'Tango' and it is available in many terminals.
 
----
+Related projects
+----------------
 
-**Note**: `vem-dark` is used as the default color scheme of a bigger Vim
-configuration setup name Vem -still in the works-. Hence the plugin name. In
-any case, this color scheme can be used totally independently from the Vem
-project. Other components of the project are:
+* [Vem Text Editor](https://www.vem-editor.org): An alternative command layout
+  for Vim.
 
 * [Vem Tabline](https://github.com/pacha/vem-tabline): A plugin to show the
   list of buffers in the tabline.
-* [Vem Statusline](https://github.com/pacha/vem-statusline): A light plugin
-  to show some useful information in Vim statusline.
+
+* [Vem Statusline](https://github.com/pacha/vem-statusline): A light
+  statusline for Vim.
 
